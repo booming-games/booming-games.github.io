@@ -3543,6 +3543,18 @@ li {
   }
 }
 
+.slider-news .news.news-betsson .img-container {
+  background-image: url(../images/news/betsson_news.jpg);
+}
+
+.slider-news .news.news-richard-harris .img-container {
+  background-image: url(../images/news/Richard_Harris.jpg);
+}
+
+.slider-news .news.news-coolbelt .img-container {
+  background-image: url(../images/news/coolbet-and-BG.jpg);
+}
+
 .slider-news .news.news-igaming-paf .img-container {
   background-image: url(../images/news/paf-and-BG.jpg);
 }
