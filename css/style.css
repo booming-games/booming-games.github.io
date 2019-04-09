@@ -3543,6 +3543,18 @@ li {
   }
 }
 
+.slider-news .news.news-bg-sweden .img-container {
+  background-image: url(../images/news/BG-certified-for-Sweden_mod.jpg);
+}
+
+.slider-news .news.news-royal-panda .img-container {
+  background-image: url(../images/news/royal-panda-and-BG_mod.jpg);
+}
+
+.slider-news .news.news-betland .img-container {
+  background-image: url(../images/news/bet-at-home-and-bg_mod.jpg);
+}
+
 .slider-news .news.news-betsson .img-container {
   background-image: url(../images/news/betsson_news.jpg);
 }
