@@ -3543,6 +3543,14 @@ li {
   }
 }
 
+.slider-news .news.news-igb-expo-2019 .img-container {
+  background-image: url(../images/news/iGB-Expo.jpg);
+}
+
+.slider-news .news.news-phil-asian-expo-2019 .img-container {
+  background-image: url(../images/news/PAGE-Expo.jpg);
+}
+
 .slider-news .news.news-bg-bojoko .img-container {
   background-image: url(../images/news/Bojoko-and-BG.jpg);
 }
