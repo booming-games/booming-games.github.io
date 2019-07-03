@@ -3086,11 +3086,11 @@ li {
   margin-bottom: 20px;
 }
 
-.open-positions .careers-boxes .position-wrap .position-details ul.bullet-list {
+.open-positions .careers-boxes .position-wrap .position-details ul {
   padding-left: 25px;
 }
 
-.open-positions .careers-boxes .position-wrap .position-details ul.bullet-list li {
+.open-positions .careers-boxes .position-wrap .position-details ul li {
   display: list-item;
 }
 

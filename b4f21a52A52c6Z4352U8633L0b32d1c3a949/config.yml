@@ -1,0 +1,55 @@
+# config.yml
+
+backend:
+  name: gitlab
+  repo: 263 # Path to your GitLab repository
+  branch: feature/integrate-jekyll # Branch to update (optional; defaults to master)
+  auth_type: implicit # Required for implicit grant
+  app_id: b4f4e4dfd28c885f5b4771187ad265bb59ab443ed4fb92324396cbc3ffbb3286 # Application ID from your GitLab settings
+  api_root: https://source.gcsd.io/api/v4
+  base_url: https://source.gcsd.io
+  auth_endpoint: oauth/authorize
+
+media_folder: 'src/images/uploads'
+public_folder: '/images/uploads'
+collections:
+  - label: "Global"
+    name: "global"
+    files:
+      - label: "Banners"
+        name: "banners"
+        file: "src/_data/banners.yml"
+        fields:
+          - label: banners
+            name: banners
+            widget: list
+            fields:
+              - {label: name, name: name, widget: string}
+              - {label: image, name: image, widget: image}
+      - label: "News"
+        name: "news"
+        file: "src/_data/news.yml"
+        fields:
+          - label: news
+            name: news
+            widget: list
+            fields:
+              - {label: title, name: title, widget: string}
+              - {label: image, name: image, widget: image}
+              - {label: content, name: content, widget: markdown}
+              - {label: date, name: date, widget: string, hint: "Date format dd.mm.yyyy"}
+              - {label: "read more link", name: read_more_link, widget: string, required: false, hint: "Fill it to generate the 'Read more' button"}
+              - {label: "play now link", name: play_now_link, widget: string, required: false, hint: "Fill it to generate the 'Play now' button"}
+  - label: "Job posts"
+    name: "job_posts"
+    folder: "src/_job_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: Title, name: title, widget: string}
+      - label: Locations
+        name: locations
+        widget: list
+        fields:
+          - {label: Location, name: location, widget: string, hint: "Job post location. One of: Berlin, Malta, Poznan, London, Remote"}
+      - {label: Body, name: body, widget: markdown}
