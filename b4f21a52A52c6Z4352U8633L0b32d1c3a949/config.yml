@@ -3,7 +3,7 @@
 backend:
   name: gitlab
   repo: 263 # Path to your GitLab repository
-  branch: feature/integrate-jekyll # Branch to update (optional; defaults to master)
+  branch: master # Branch to update (optional; defaults to master)
   auth_type: implicit # Required for implicit grant
   app_id: b4f4e4dfd28c885f5b4771187ad265bb59ab443ed4fb92324396cbc3ffbb3286 # Application ID from your GitLab settings
   api_root: https://source.gcsd.io/api/v4
