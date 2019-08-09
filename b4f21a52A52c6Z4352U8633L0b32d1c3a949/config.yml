@@ -5,7 +5,7 @@ backend:
   repo: 263 # Path to your GitLab repository
   branch: master # Branch to update (optional; defaults to master)
   auth_type: implicit # Required for implicit grant
-  app_id: 900bc4437814a110e8642e75f50afabe7ae3ac179d5cfa4c6c557507501e1d1d # Application ID from your GitLab settings
+  app_id: 2858ff1f0e7594299012023f6ed460e36bf647531433a9f6728834d19737607d # Application ID from your GitLab settings
   api_root: https://source.gcsd.io/api/v4
   base_url: https://source.gcsd.io
   auth_endpoint: oauth/authorize
