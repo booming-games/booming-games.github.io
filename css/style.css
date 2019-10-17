@@ -3963,6 +3963,7 @@ li {
   top: -4px;
   margin-right: 6px;
   overflow: hidden;
+  display: inline;
 }
 
 .section-contact .contact-form .g-recaptcha {
