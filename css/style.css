@@ -3946,6 +3946,25 @@ li {
   margin-top: 5px;
 }
 
+.section-contact .contact-form .checkbox-container label {
+  font-size: 13px;
+  display: block;
+  padding-left: 20px;
+  text-indent: -20px;
+}
+
+.section-contact .contact-form .checkbox-container input {
+  width: 13px;
+  height: 13px;
+  padding: 0;
+  margin: 0;
+  vertical-align: bottom;
+  position: relative;
+  top: -4px;
+  margin-right: 6px;
+  overflow: hidden;
+}
+
 .section-contact .contact-form .g-recaptcha {
   margin-top: 15px;
 }
