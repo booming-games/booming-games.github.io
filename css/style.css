@@ -3966,6 +3966,10 @@ li {
   display: inline;
 }
 
+.section-contact .contact-form .checkbox-container .validation-alert {
+  padding-left: 20px;
+}
+
 .section-contact .contact-form .g-recaptcha {
   margin-top: 15px;
 }
