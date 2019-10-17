@@ -3968,6 +3968,7 @@ li {
 
 .section-contact .contact-form .checkbox-container .validation-alert {
   padding-left: 20px;
+  display: block;
 }
 
 .section-contact .contact-form .g-recaptcha {
