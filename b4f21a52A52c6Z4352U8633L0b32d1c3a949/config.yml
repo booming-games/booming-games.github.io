@@ -53,3 +53,10 @@ collections:
         fields:
           - {label: Location, name: location, widget: string, hint: "Job post location. One of: Berlin, Malta, Poznan, London, Remote"}
       - {label: Body, name: body, widget: markdown}
+  - label: "Static content"
+    name: "static_content"
+    folder: "src/_static_content"
+    slug: "{{slug}}"
+    fields:
+      - {label: Title, name: title, widget: string}
+      - {label: Body, name: body, widget: markdown}
