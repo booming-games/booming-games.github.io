@@ -1301,7 +1301,6 @@ textarea {
   }
   .medium-8 {
     width: 66.66667%;
-    height: 100vh;
   }
   .medium-push-8 {
     position: relative;
@@ -1988,7 +1987,7 @@ body::-webkit-scrollbar-thumb {
   background-color: #ff2748;
 }
 
-a {
+a, a:hover {
   text-decoration: none;
 }
 
@@ -2006,6 +2005,23 @@ button {
 a:focus,
 button:focus {
   outline: none;
+}
+
+a.internal-link,
+a.internal-link:visited,
+.static-content-container a,
+.static-content-container a:visited {
+  border-bottom: 1px solid white;
+  padding-bottom: 1px;
+  color: white;
+}
+
+a.internal-link:hover,
+a.internal-link:visited:hover,
+.static-content-container a:hover,
+.static-content-container a:visited:hover {
+  text-decoration: none;
+  border-bottom: 0px;
 }
 
 li {
@@ -2832,6 +2848,30 @@ li {
 .slick-disabled {
   opacity: 0.5;
   pointer-events: none;
+}
+
+.footer {
+  padding-bottom: 25px !important;
+}
+
+.footer .logos-container {
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width: 600px) {
+  .footer .logos-container div {
+    margin-top: 15px;
+    text-align: center !important;
+  }
+}
+
+.footer .logos-container img {
+  max-height: 50px;
+}
+
+.footer .policies-container {
+  margin-top: 12px;
 }
 
 .banner {
@@ -3841,42 +3881,6 @@ li {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-@media (min-width: 640px) {
-  .section-contact .columns:first-of-type {
-    padding-right: 25px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-
-@media (min-width: 1024px) {
-  .section-contact .columns:first-of-type {
-    padding-right: 55px;
-  }
-}
-
-.section-contact .columns:first-of-type .logo {
-  max-width: 250px;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  display: block;
-}
-
-@media (min-width: 640px) {
-  .section-contact .columns:nth-of-type(2) {
-    padding-left: 25px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .section-contact .columns:nth-of-type(2) {
-    padding-left: 55px;
-  }
 }
 
 .section-contact .contact-form {
